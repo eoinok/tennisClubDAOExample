@@ -12,6 +12,8 @@ The functions you should add are to be called saveMember(member) and getAllMembe
 
 ![alt text](MemberDAO.png)
 
+The TennisGUI.py class has been provided for you. You do not need to make any changes to this class but once you have completed part 1 and 2 successfully, this GUI will work properly allowing the user to add new Members and to Return the Complete list of members from the tennis club.
+
 # Part 1
 
 The saveMember(mebmer) function should take one argument containing a Member object. The function should then use the getters to pull the firstname, surname, dateofbirth and membertype from the object. These should then be used to construct a SQL insert into string which in turn should be executed against the connection in order to add the Member's details to the database.
