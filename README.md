@@ -2,6 +2,8 @@
 
 The following example uses the Data Access Objects design pattern to create a set of objects that will allow programmers to save objects to the database without using SQL. The Member class, the TennisGUI class and the MemberDAO class have been supplied for you but your job is to add two functions to the MemberDAO class to make the overall application work.
 
+**Important - Remember to use 32-bit-Windows Python for all examples connecting to an MSAccess Database - i.e. this example requires 32-bit-Windows Python throughout**
+
 The following assignment has the following objectives
 - To introduce the concept of a Design Pattern as a way to organise Classes and objects effectively
 - To allow learners to develop a further understanding of embedded SQL
