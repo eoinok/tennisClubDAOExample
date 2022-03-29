@@ -46,13 +46,13 @@ class TennisGUI:
         
 
     def addMember(self):
-        self.clearScreen()
         firstname = self.entry1.get()
         surname = self.entry2.get()
         dob = self.entry3.get()
         membertype = self.entry4.get()
         newMember = Member(firstname,surname,dob,membertype)
         self.memberDAOConn.saveMember(newMember)
+        self.clearScreen()
         self.txtBox.insert(END,"New Member Added")
 
     def showAllMembers(self):
