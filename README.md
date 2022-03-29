@@ -2,6 +2,8 @@
 
 The following example uses the Data Access Objects design pattern to create a set of objects that will allow programmers to save objects to the database without using SQL. The Member class, the TennisGUI class and the MemberDAO class have been supplied for you but your job is to add two functions to the MemberDAO class to make the overall application work.
 
+**Important - Remember to use 32-bit-Windows Python for all examples connecting to an MSAccess Database - i.e. this example requires 32-bit-Windows Python throughout**
+
 The following assignment has the following objectives
 - To introduce the concept of a Design Pattern as a way to organise Classes and objects effectively
 - To allow learners to develop a further understanding of embedded SQL
@@ -21,3 +23,5 @@ The saveMember(mebmer) function should take one argument containing a Member obj
 # Part 2
 
 The getAllMembers() function should take no arguments(other than self). The function should execute a SQL query on the database connection which will retrieve a database cursor. The function should then loop through the cursor object, constructing a new Member object each time which will in turn be added to a list. When the loop is complete the list should be returned from the function
+
+The file printAllMembers.py shows an example of code to select all members of the tennis club from the member table and print them to the screen. You can modify this example, so that rather than printing the members info to the screen, each time around the loop a new member is instantiated and added to a list of members. Then simply return this list.
